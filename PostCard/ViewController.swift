@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var informationLabel: UILabel!
+    @IBOutlet weak var sendMailButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var textTextField: UITextField!
     
@@ -34,6 +36,12 @@ class ViewController: UIViewController {
         
         textTextField.text.removeAll(keepCapacity: false);
         textTextField.resignFirstResponder();
+        
+        nameLabel.text = nameTextField.text;
+        nameLabel.hidden = false;
+        
+        
+        
         
         sender.setTitle("Sending...", forState: UIControlState.Highlighted);
     }

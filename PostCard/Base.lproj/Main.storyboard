@@ -39,8 +39,14 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeW-uW-bph"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVp-LJ-zLx">
+                                <rect key="frame" x="16" y="72" width="195" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdu-YW-1G2">
-                                <rect key="frame" x="16" y="72" width="200" height="21"/>
+                                <rect key="frame" x="16" y="101" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,7 +57,9 @@
                     <navigationItem key="navigationItem" id="9Fk-el-2Pi"/>
                     <connections>
                         <outlet property="informationLabel" destination="Tdu-YW-1G2" id="7dg-mP-Mmm"/>
+                        <outlet property="nameLabel" destination="lVp-LJ-zLx" id="ywp-gS-2FE"/>
                         <outlet property="nameTextField" destination="A2N-mX-zoV" id="e2A-gq-SEc"/>
+                        <outlet property="sendMailButton" destination="8zh-yD-dlE" id="VO7-i2-vq4"/>
                         <outlet property="textTextField" destination="gRC-P2-WZa" id="3Eb-Gj-4Mz"/>
                     </connections>
                 </viewController>
